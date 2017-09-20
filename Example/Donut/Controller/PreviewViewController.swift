@@ -34,24 +34,15 @@ final class PreviewViewController: UIViewController, DonutViewDelegate {
         title = "Preview"
 
         donutView.frame = view.bounds
-        donutView.setCenterDiff(CGPoint(x: 0, y: 0))
-        donutView.setCarouselInclination(angleX: 0.0, angleZ: 0.0)
-        donutView.setFrontCellAlpha(1.0)
-        donutView.setBackCellAlpha(0.7)
-        donutView.setSelectableCell(true)
-        donutView.setCellAlignmentCenter(true)
-        donutView.setBackCellInteractionEnabled(false)
-        donutView.setOnlyCellInteractionEnabled(true)
-        donutView.setAnimationCurve(.linear)
-
-        donutView.addCells(getCardCells())
-
         donutView.delegate = self
+        updateConfig()
+        donutView.addCells(getCardCells())
         view.addSubview(donutView)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        updateConfig()
         reloadCells()
     }
 
@@ -79,6 +70,19 @@ final class PreviewViewController: UIViewController, DonutViewDelegate {
     }
 
     // MARK: - Private Methods
+
+    private func updateConfig() {
+        let manager = ConfigManager.shared
+        donutView.setCenterDiff(CGPoint(x: manager.centerDiffX, y: manager.centerDiffY))
+        donutView.setCarouselInclination(angleX: manager.inclinationX, angleZ: manager.inclinationZ)
+        donutView.setFrontCellAlpha(manager.frontCellAlpha)
+        donutView.setBackCellAlpha(manager.backCellAlpha)
+        donutView.setSelectableCell(manager.isSelectableCell)
+        donutView.setCellAlignmentCenter(manager.isCellAlignmentCenter)
+        donutView.setBackCellInteractionEnabled(manager.isBackCellInteractionEnabled)
+        donutView.setOnlyCellInteractionEnabled(manager.isOnlyCellInteractionEnabled)
+        donutView.setAnimationCurve(manager.animationCurve)
+    }
 
     private func getCardCells() -> [DonutViewCell] {
 

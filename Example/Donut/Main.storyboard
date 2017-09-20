@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,14 +54,44 @@
                         <viewControllerLayoutGuide type="bottom" id="7PR-7t-PVL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r9D-8t-Lc8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gv9-Bm-V5L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AV8-J9-IJY">
+                                <rect key="frame" x="16" y="563" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a62-KA-zB6"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset All Configs"/>
+                                <connections>
+                                    <action selector="resetAllConfig:" destination="EE9-0e-Ypr" eventType="touchUpInside" id="7Jm-7t-CMO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7PR-7t-PVL" firstAttribute="top" secondItem="AV8-J9-IJY" secondAttribute="bottom" id="5ZY-GF-4e6"/>
+                            <constraint firstItem="7PR-7t-PVL" firstAttribute="top" secondItem="Gv9-Bm-V5L" secondAttribute="bottom" constant="40" id="6X7-1N-41C"/>
+                            <constraint firstItem="AV8-J9-IJY" firstAttribute="leading" secondItem="r9D-8t-Lc8" secondAttribute="leadingMargin" id="Eyb-fi-txt"/>
+                            <constraint firstItem="Gv9-Bm-V5L" firstAttribute="leading" secondItem="r9D-8t-Lc8" secondAttribute="leading" id="UDH-Pa-dda"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AV8-J9-IJY" secondAttribute="trailing" id="fKJ-eK-nAF"/>
+                            <constraint firstItem="Gv9-Bm-V5L" firstAttribute="top" secondItem="8rf-9x-zuA" secondAttribute="bottom" id="nsG-xX-eZb"/>
+                            <constraint firstAttribute="trailing" secondItem="Gv9-Bm-V5L" secondAttribute="trailing" id="z51-cN-0oE"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="tableView" destination="Gv9-Bm-V5L" id="aQM-0D-Ol3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMI-gA-Uuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="143"/>
+            <point key="canvasLocation" x="901.60000000000002" y="142.57871064467767"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oxv-5P-MNo">

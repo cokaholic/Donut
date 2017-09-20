@@ -11,8 +11,9 @@ import UIKit
 
 final class ConfigManager {
 
-    private enum Const {
-        static let centerDiffMax: CGFloat = 200
+    enum Const {
+        static let centerDiffMin: CGFloat = -100.0
+        static let centerDiffMax: CGFloat = 100.0
     }
 
     static let shared = ConfigManager()
@@ -20,43 +21,43 @@ final class ConfigManager {
     var centerDiffX: CGFloat = 0.0 {
         willSet {
             self.centerDiffX = checkValueMinMax(newValue: newValue,
-                                                minValue: 0.0,
+                                                minValue: Const.centerDiffMin,
                                                 maxValue: Const.centerDiffMax)
         }
     }
     var centerDiffY: CGFloat = 0.0 {
         willSet {
-            self.centerDiffX = checkValueMinMax(newValue: newValue,
-                                                minValue: 0.0,
+            self.centerDiffY = checkValueMinMax(newValue: newValue,
+                                                minValue: Const.centerDiffMin,
                                                 maxValue: Const.centerDiffMax)
         }
     }
-    var inclinationX: CGFloat = 0.0 {
+    var inclinationX: CGFloat = -0.1 {
         willSet {
-            self.centerDiffX = checkValueMinMax(newValue: newValue,
-                                                minValue: -.pi,
-                                                maxValue: .pi)
+            self.inclinationX = checkValueMinMax(newValue: newValue,
+                                                 minValue: -.pi,
+                                                 maxValue: .pi)
         }
     }
     var inclinationZ: CGFloat = 0.0 {
         willSet {
-            self.centerDiffX = checkValueMinMax(newValue: newValue,
-                                                minValue: -.pi,
-                                                maxValue: .pi)
+            self.inclinationZ = checkValueMinMax(newValue: newValue,
+                                                 minValue: -.pi,
+                                                 maxValue: .pi)
         }
     }
     var frontCellAlpha: CGFloat = 1.0 {
         willSet {
-            self.centerDiffX = checkValueMinMax(newValue: newValue,
-                                                minValue: 0.0,
-                                                maxValue: 1.0)
+            self.frontCellAlpha = checkValueMinMax(newValue: newValue,
+                                                   minValue: 0.0,
+                                                   maxValue: 1.0)
         }
     }
     var backCellAlpha: CGFloat = 0.7 {
         willSet {
-            self.centerDiffX = checkValueMinMax(newValue: newValue,
-                                                minValue: 0.0,
-                                                maxValue: 1.0)
+            self.backCellAlpha = checkValueMinMax(newValue: newValue,
+                                                  minValue: 0.0,
+                                                  maxValue: 1.0)
         }
     }
     var isSelectableCell = true
@@ -68,13 +69,13 @@ final class ConfigManager {
     func reset() {
         centerDiffX = 0.0
         centerDiffY = 0.0
-        inclinationX = 0.0
+        inclinationX = -0.1
         inclinationZ = 0.0
         frontCellAlpha = 1.0
         backCellAlpha = 0.7
         isSelectableCell = true
         isCellAlignmentCenter = true
-        isBackCellInteractionEnabled = true
+        isBackCellInteractionEnabled = false
         isOnlyCellInteractionEnabled = true
         animationCurve = .linear
     }
