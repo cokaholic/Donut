@@ -142,7 +142,7 @@ class ViewController: UIViewController, DonutViewDelegate {
 }
 ```
 
-See [Example](https://github.com/cokaholic/Donut/Example), for more details.
+See [Example](https://github.com/cokaholic/Donut/tree/master/Example), for more details.
 
 ## <a name="requirements"> Requirements
 
