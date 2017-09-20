@@ -38,6 +38,8 @@
 - [x] Support `Swift3`
 - [x] And more...
 
+#### [Run example app in your browser](https://appetize.io/app/u8pqek1414r8degeq4u9ttegpg?device=iphone6s&scale=75&orientation=portrait&osVersion=11.0)
+
 ## <a name="usage"> Usage
 
 ### *1. Frame Size And Center Diff*
@@ -85,11 +87,11 @@ You can set an animation curve from below list.
 ```swift
 public enum UIViewAnimationCurve : Int {
 
-    case easeInOut // slow at beginning and end
+    case easeInOut  // slow at beginning and end
 
-    case easeIn // slow at beginning
+    case easeIn     // slow at beginning
 
-    case easeOut // slow at end
+    case easeOut    // slow at end
 
     case linear
 }
