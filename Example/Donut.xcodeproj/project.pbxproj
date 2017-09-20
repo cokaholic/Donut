@@ -17,11 +17,11 @@
 		FF5102D21F725036008CD6D9 /* ClowCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102D01F725036008CD6D9 /* ClowCardCell.swift */; };
 		FF5102D31F725036008CD6D9 /* ClowCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5102D11F725036008CD6D9 /* ClowCardCell.xib */; };
 		FF5102D51F725057008CD6D9 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102D41F725057008CD6D9 /* PreviewViewController.swift */; };
-		FF5102D71F7257C9008CD6D9 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102D61F7257C9008CD6D9 /* ConfigViewController.swift */; };
 		FFB4D0101F72AB9F007624F1 /* SegmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4D00F1F72AB9F007624F1 /* SegmentTableViewCell.swift */; };
 		FFB4D0121F72ABB4007624F1 /* SegmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB4D0111F72ABB4007624F1 /* SegmentTableViewCell.xib */; };
 		FFB4D0141F72BC47007624F1 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4D0131F72BC47007624F1 /* SwitchTableViewCell.swift */; };
 		FFB4D0161F72BC58007624F1 /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB4D0151F72BC58007624F1 /* SwitchTableViewCell.xib */; };
+		FFB4D0181F72C446007624F1 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4D0171F72C446007624F1 /* ConfigViewController.swift */; };
 		FFDB3E681F711D8C006941B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDB3E671F711D8C006941B4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -57,11 +57,11 @@
 		FF5102D01F725036008CD6D9 /* ClowCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClowCardCell.swift; path = View/ClowCardCell.swift; sourceTree = "<group>"; };
 		FF5102D11F725036008CD6D9 /* ClowCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ClowCardCell.xib; path = View/ClowCardCell.xib; sourceTree = "<group>"; };
 		FF5102D41F725057008CD6D9 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Controller/PreviewViewController.swift; sourceTree = "<group>"; };
-		FF5102D61F7257C9008CD6D9 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		FFB4D00F1F72AB9F007624F1 /* SegmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegmentTableViewCell.swift; path = View/SegmentTableViewCell.swift; sourceTree = "<group>"; };
 		FFB4D0111F72ABB4007624F1 /* SegmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SegmentTableViewCell.xib; path = View/SegmentTableViewCell.xib; sourceTree = "<group>"; };
 		FFB4D0131F72BC47007624F1 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchTableViewCell.swift; path = View/SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		FFB4D0151F72BC58007624F1 /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwitchTableViewCell.xib; path = View/SwitchTableViewCell.xib; sourceTree = "<group>"; };
+		FFB4D0171F72C446007624F1 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = Controller/ConfigViewController.swift; sourceTree = "<group>"; };
 		FFDB3E671F711D8C006941B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				FF5102D41F725057008CD6D9 /* PreviewViewController.swift */,
-				FF5102D61F7257C9008CD6D9 /* ConfigViewController.swift */,
+				FFB4D0171F72C446007624F1 /* ConfigViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -416,8 +416,8 @@
 				FFB4D0101F72AB9F007624F1 /* SegmentTableViewCell.swift in Sources */,
 				FFB4D0141F72BC47007624F1 /* SwitchTableViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FFB4D0181F72C446007624F1 /* ConfigViewController.swift in Sources */,
 				FF5102CF1F724FEF008CD6D9 /* ConfigManager.swift in Sources */,
-				FF5102D71F7257C9008CD6D9 /* ConfigViewController.swift in Sources */,
 				FF5102D51F725057008CD6D9 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
