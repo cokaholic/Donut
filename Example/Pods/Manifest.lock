@@ -1,0 +1,16 @@
+PODS:
+  - Donut (1.0.0)
+
+DEPENDENCIES:
+  - Donut (from `../`)
+
+EXTERNAL SOURCES:
+  Donut:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Donut: c4743008cc52c409ae15c4f139375a898590dd61
+
+PODFILE CHECKSUM: dc9d9ab7ec146f48821bdfeac41e2fa604165b50
+
+COCOAPODS: 1.2.0

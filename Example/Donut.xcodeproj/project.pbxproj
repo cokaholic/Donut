@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		700003C2CBB161C5C7A67B3B /* Pods_Donut_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD01A15611F62A583DCAC09 /* Pods_Donut_Tests.framework */; };
 		AAAD7928E5216F470DF0723C /* Pods_Donut_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63E04E20D48FF0639C479D4 /* Pods_Donut_Example.framework */; };
+		FF5102CF1F724FEF008CD6D9 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102CE1F724FEF008CD6D9 /* ConfigManager.swift */; };
+		FF5102D21F725036008CD6D9 /* ClowCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102D01F725036008CD6D9 /* ClowCardCell.swift */; };
+		FF5102D31F725036008CD6D9 /* ClowCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5102D11F725036008CD6D9 /* ClowCardCell.xib */; };
+		FF5102D51F725057008CD6D9 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102D41F725057008CD6D9 /* PreviewViewController.swift */; };
+		FF5102D71F7257C9008CD6D9 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5102D61F7257C9008CD6D9 /* ConfigViewController.swift */; };
+		FFDB3E681F711D8C006941B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDB3E671F711D8C006941B4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,14 +33,12 @@
 
 /* Begin PBXFileReference section */
 		09416353102B11FE59F3073F /* Pods-Donut_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donut_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donut_Tests/Pods-Donut_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		337B05780CC29DE47271F690 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		337B05780CC29DE47271F690 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4DD01A15611F62A583DCAC09 /* Pods_Donut_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donut_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C671613BB3B30501EC67D54 /* Pods-Donut_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donut_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Donut_Example/Pods-Donut_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Donut_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donut_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Donut_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Donut_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +46,15 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A3A0F30D9AB8CFA7E60F46D6 /* Pods-Donut_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donut_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Donut_Tests/Pods-Donut_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B63E04E20D48FF0639C479D4 /* Pods_Donut_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Donut_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE2D9A387E95AC62920C3D1A /* Donut.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Donut.podspec; path = ../Donut.podspec; sourceTree = "<group>"; };
-		D1170FD600E83E278B82D2D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CE2D9A387E95AC62920C3D1A /* Donut.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Donut.podspec; path = ../Donut.podspec; sourceTree = "<group>"; };
+		D1170FD600E83E278B82D2D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F5194B908C3A1AA2AE0898D1 /* Pods-Donut_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Donut_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Donut_Example/Pods-Donut_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FF5102CE1F724FEF008CD6D9 /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigManager.swift; path = Manager/ConfigManager.swift; sourceTree = "<group>"; };
+		FF5102D01F725036008CD6D9 /* ClowCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClowCardCell.swift; path = View/ClowCardCell.swift; sourceTree = "<group>"; };
+		FF5102D11F725036008CD6D9 /* ClowCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ClowCardCell.xib; path = View/ClowCardCell.xib; sourceTree = "<group>"; };
+		FF5102D41F725057008CD6D9 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Controller/PreviewViewController.swift; sourceTree = "<group>"; };
+		FF5102D61F7257C9008CD6D9 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		FFDB3E671F711D8C006941B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				FF5102CC1F724EED008CD6D9 /* Controller */,
+				FF5102CD1F724F82008CD6D9 /* Manager */,
+				FF5102CB1F724D02008CD6D9 /* View */,
+				FFDB3E671F711D8C006941B4 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -157,6 +167,32 @@
 				4DD01A15611F62A583DCAC09 /* Pods_Donut_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF5102CB1F724D02008CD6D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF5102D01F725036008CD6D9 /* ClowCardCell.swift */,
+				FF5102D11F725036008CD6D9 /* ClowCardCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FF5102CC1F724EED008CD6D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF5102D41F725057008CD6D9 /* PreviewViewController.swift */,
+				FF5102D61F7257C9008CD6D9 /* ConfigViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FF5102CD1F724F82008CD6D9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FF5102CE1F724FEF008CD6D9 /* ConfigManager.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				FF5102D31F725036008CD6D9 /* ClowCardCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				FFDB3E681F711D8C006941B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				FF5102D21F725036008CD6D9 /* ClowCardCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FF5102CF1F724FEF008CD6D9 /* ConfigManager.swift in Sources */,
+				FF5102D71F7257C9008CD6D9 /* ConfigViewController.swift in Sources */,
+				FF5102D51F725057008CD6D9 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

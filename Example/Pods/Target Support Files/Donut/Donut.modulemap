@@ -1,0 +1,6 @@
+framework module Donut {
+  umbrella header "Donut-umbrella.h"
+
+  export *
+  module * { export * }
+}

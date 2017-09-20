@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Donut
 //
-//  Created by abema on 09/19/2017.
-//  Copyright (c) 2017 abema. All rights reserved.
+//  Created by Keisuke Tatsumi on 09/19/2017.
+//  Copyright (c) 2017 Keisuke Tatsumi. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         return true
     }
 
