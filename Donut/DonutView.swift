@@ -388,7 +388,7 @@ extension DonutView {
         return cells[circularIndex%cells.count]
     }
 
-    func circularPreviusObject(cells: [DonutViewCell], cell: DonutViewCell) -> DonutViewCell? {
+    func circularPreviousObject(cells: [DonutViewCell], cell: DonutViewCell) -> DonutViewCell? {
 
         guard let index = cells.index(of: cell) else { return nil }
         return circularObject(cells: cells, index: index - 1)
