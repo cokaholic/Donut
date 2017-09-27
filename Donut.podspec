@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Donut'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Donut is a library for arranging views circularly like a donut.'
 
   s.description      = <<-DESC
