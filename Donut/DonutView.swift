@@ -70,8 +70,7 @@ open class DonutView: UIView {
         }
     }
 
-    public func removeCell(cell: DonutViewCell) {
-
+    public func removeCell(_ cell: DonutViewCell) {
         guard let index: Int = cells.index(of: cell) else { return }
         DispatchQueue.main.async { [weak self] in
             guard let me = self else { return }
